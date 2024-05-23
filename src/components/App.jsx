@@ -2,7 +2,7 @@ import React from "react";
 import emojipedia from "../emojipedia";
 import Entity from "./Entry";
 
-function MapCard(emoji) {
+function CreateEntry(emoji) {
   return (
     <Entity
       key={emoji.id}
@@ -19,7 +19,7 @@ function App() {
       <h1>
         <span>emojipedia</span>
       </h1>
-      <dl className="dictionary">{emojipedia.map(MapCard)}</dl>
+      <dl className="dictionary">{emojipedia.map(CreateEntry)}</dl>
     </div>
   );
 }
